@@ -29,7 +29,7 @@ cd your-dapp-name
 
 ### STEP 2: Load The dApp In The Corresponding Network Configurations.
 
-In our example we load `@vendorname/dappname` in the Testnet network configuration. dApp name is take from `node` package name as defined in package.json.
+In our example we load `@vendorname/dappname` in the Testnet network configuration. dApp name is taken from `node` package name as defined in package.json.
 
 Go to:
 `core/packages/core/bin/testnet`
@@ -38,7 +38,7 @@ Go to:
 cd packages/core/bin/config/testnet
 ```
 
-Locate file `plugins.js`. We will add our dApp/plugin name to end of the list of the loaded plugins. This means that core will pickup the plugin/dapp and load it for a specific network configuration. Add line `"@arkecosystem/your-dapp-name": {}`: to the end of the `plugins.js` file, so it looks something like this:
+Locate file `plugins.js`. We will add our dApp/plugin name to end of the list of the loaded plugins. This means that core will pickup the plugin/dapp and load it for a specific network configuration. Add line `"@arkecosystem/dappname": {}`: to the end of the `plugins.js` file, so it looks something like this:
 
 ```javascript
     "@arkecosystem/core-exchange-json-rpc": {
