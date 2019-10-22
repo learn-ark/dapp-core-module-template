@@ -116,11 +116,9 @@ Head over to http://localhost:8080/ to view contents of local running blockchain
 
 ---
 
-Congrats, your dapp is loaded. Now look at the resources below to understand more about our dapp development.
+>Congrats, your dapp is loaded. Now look at the resources below to understand more about our dapp development.
 
--   [Introduction To Custom Transactions](https://blog.ark.io/an-introduction-to-blockchain-application-development-part-2-2-909b4984bae)
 -   [Learn Development With ARK](https://learn.ark.dev)
-
 
 ## Security
 
