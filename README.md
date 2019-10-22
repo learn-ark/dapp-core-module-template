@@ -38,7 +38,7 @@ Go to:
 cd packages/core/bin/config/testnet
 ```
 
-Locate file `plugins.js`. We will add our plugin name to end of the list of the loaded plugins. This means that core will pickup the plugin/dapp and load it for a specific network configuration. Add line `"@arkecosystem/custom-transactions": {}`: to the end of the `plugins.js` file, so it looks something like this:
+Locate file `plugins.js`. We will add our dApp/plugin name to end of the list of the loaded plugins. This means that core will pickup the plugin/dapp and load it for a specific network configuration. Add line `"@arkecosystem/your-dapp-name": {}`: to the end of the `plugins.js` file, so it looks something like this:
 
 ```javascript
     "@arkecosystem/core-exchange-json-rpc": {
@@ -58,6 +58,8 @@ Locate file `plugins.js`. We will add our plugin name to end of the list of the 
 
 Start local blockchain with testnet running on your developer computer. Follow steps defined in here:
 https://learn.ark.dev/core-getting-started/spinning-up-your-first-testnet#step-2-testnet-network-boot
+
+> Pay attention to the core log. It should write that your plugin/dapp was loaded.
 
 
 ## Use Block Explorer To View Local Running Testnet
@@ -105,10 +107,6 @@ Congrats, your dapp is loaded. Now look at the resources below to understand mor
 
 If you discover a security vulnerability within this package, please send an e-mail to security@ark.io. All security vulnerabilities will be promptly addressed.
 
-## Credits
-
--   [Your Name](https://github.com/ArkEcosystem)
--   [All Contributors](../../../../contributors)
 
 ## License
 
