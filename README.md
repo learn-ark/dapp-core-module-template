@@ -29,7 +29,7 @@ cd your-dapp-name
 
 ### STEP 2: Load The dApp In The Corresponding Network Configurations.
 
-In our example we load `your-dapp-name` in the Testnet network configuration.
+In our example we load `@vendorname/dappname` in the Testnet network configuration. dApp name is take from `node` package name as defined in package.json.
 
 Go to:
 `core/packages/core/bin/testnet`
@@ -49,7 +49,7 @@ Locate file `plugins.js`. We will add our dApp/plugin name to end of the list of
         whitelist: ["127.0.0.1", "::ffff:127.0.0.1"],
     },
     "@arkecosystem/core-snapshots": {},
-    "@vendorname/your-dapp-name": {}, //our application hook (here we load the plugin/dapp, as defined in your dapp package.json)
+    "@vendorname/dappname": {}, //our application hook (here we load the plugin/dapp, as defined in your dapp package.json)
 ```
 
 > Make sure to run `yarn setup` from the `core` root folder when you change or add code to `core/plugins`
