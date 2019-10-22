@@ -49,10 +49,23 @@ Locate file `plugins.js`. We will add our plugin name to end of the list of the 
         whitelist: ["127.0.0.1", "::ffff:127.0.0.1"],
     },
     "@arkecosystem/core-snapshots": {},
-    "@arkecosystem/your-dapp-name": {}, //our application hook (here we load the plugin/dapp)
+    "@vendorname/your-dapp-name": {}, //our application hook (here we load the plugin/dapp, as defined in your dapp package.json)
 ```
 
 > Make sure to run `yarn setup` from the `core` root folder when you change or add code to `core/plugins`
+
+After `yarn setup` completes, you should see the following log
+
+```bash
+lerna success - @arkecosystem/core-vote-report
+lerna success - @arkecosystem/core-wallet-api
+lerna success - @arkecosystem/core-webhooks
+lerna success - @arkecosystem/core
+lerna success - @arkecosystem/crypto
+lerna success - @vendorname/dappname
+```
+
+Last line showing that your plugin was loaded.
 
 ### STEP 3: Setup Development Docker Database
 
@@ -64,6 +77,14 @@ https://learn.ark.dev/core-getting-started/spinning-up-your-first-testnet#step-1
 Start local blockchain with testnet running on your developer computer. Follow steps defined in here:
 https://learn.ark.dev/core-getting-started/spinning-up-your-first-testnet#step-2-testnet-network-boot
 
+After your local testnet starts, the log should show that dapp was loaded. It should like this (if you haven't changed source code):
+
+```bash
+[2019-10-22 11:13:27.161] INFO : Starting dApp
+[2019-10-22 11:13:27.161] INFO : Initialization of dApp
+```
+
+> Congratulations. Your first blockchain application is loaded and working and already compatible with any ARK Core based blockchain. 
 
 ## Use Block Explorer To View Local Running Testnet
 

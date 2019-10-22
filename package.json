@@ -1,7 +1,7 @@
 {
     "private": true,
-    "name": "@vendorname/dappname",
-    "description": "Provides ... for ARK CORE",
+    "name": "@vendorname/your-dapp-name",
+    "description": "Your dApp description",
     "version": "0.0.1",
     "contributors": [
         "FirstName, LastName <kristjan@ark.io>"
