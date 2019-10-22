@@ -11,15 +11,15 @@ This is a basic template project for Ark dApp development.
 
 > This Example is currently operational only on our `core/develop` branch!
 
-This dApp provides structure for your dApp development. 
+This template project provides initial structure for your dApp development. 
 
 ## dApp Installation
 
 ### STEP 0: Create New Project Based On This Template
 
-### STEP 1: Checkout Your New dApp Project As a GitSubmodule
+### STEP 1: Checkout Your New dApp Project As a GitSubmodule in `core/plugins`
 
-Assuming you have already checked out out core repository.
+Assuming you have already checked out out core repository and have local testnet running. If not head over to https://learn.ark.dev/core-getting-started/spinning-up-your-first-testnet#step-2-testnet-network-boot
 
 ```bash
 cd plugins/ #location for loading of custom non-core dApps
@@ -54,12 +54,7 @@ Locate file `plugins.js`. We will add our plugin name to end of the list of the 
 
 > Make sure to run `yarn setup` from the `core` root folder when you change or add code to `core/plugins`
 
-### STEP 3: Setup Development Docker Database
-
-Setup docker database config and run Postgres DB via Docker. Follow the steps from here:
-https://learn.ark.dev/core-getting-started/spinning-up-your-first-testnet#step-1-start-docker-testnet-database
-
-### STEP 4: Start Local Testnet Blockchain
+### STEP 3: Start Local Testnet Blockchain
 
 Start local blockchain with testnet running on your developer computer. Follow steps defined in here:
 https://learn.ark.dev/core-getting-started/spinning-up-your-first-testnet#step-2-testnet-network-boot
