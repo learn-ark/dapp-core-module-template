@@ -11,19 +11,19 @@ This is a basic template project for Ark dApp development.
 
 > This Example is currently operational only on our `core/develop` branch!
 
-This dApp provides structure for your dApp development. 
+This template project provides initial structure for your dApp development.
 
 ## dApp Installation
 
 ### STEP 0: Create New Project Based On This Template
 
-### STEP 1: Checkout Your New dApp Project As a GitSubmodule
+### STEP 1: Checkout Your New dApp Project As a GitSubmodule in `core/plugins`
 
-Assuming you have already checked out out core repository.
+Assuming you have already checked out out core repository and have local testnet running. If not head over to https://learn.ark.dev/core-getting-started/spinning-up-your-first-testnet#step-2-testnet-network-boot
 
 ```bash
 cd plugins/ #location for loading of custom non-core dApps
-git submodule add -f https://github.com/your-handle/your-dapp-name 
+git submodule add -f https://github.com/your-handle/your-dapp-name
 cd your-dapp-name
 ```
 
@@ -38,7 +38,7 @@ Go to:
 cd packages/core/bin/config/testnet
 ```
 
-Locate file `plugins.js`. We will add our plugin name to end of the list of the loaded plugins. This means that core will pickup the plugin/dapp and load it for a specific network configuration. Add line `"@arkecosystem/custom-transactions": {}`: to the end of the `plugins.js` file, so it looks something like this:
+Locate file `plugins.js`. We will add our dApp/plugin name to end of the list of the loaded plugins. This means that core will pickup the plugin/dapp and load it for a specific network configuration. Add line `"@arkecosystem/your-dapp-name": {}`: to the end of the `plugins.js` file, so it looks something like this:
 
 ```javascript
     "@arkecosystem/core-exchange-json-rpc": {
@@ -67,24 +67,19 @@ lerna success - @vendorname/dappname
 
 Last line showing that your plugin was loaded.
 
-### STEP 3: Setup Development Docker Database
-
-Setup docker database config and run Postgres DB via Docker. Follow the steps from here:
-https://learn.ark.dev/core-getting-started/spinning-up-your-first-testnet#step-1-start-docker-testnet-database
-
-### STEP 4: Start Local Testnet Blockchain
+### STEP 3: Start Local Testnet Blockchain
 
 Start local blockchain with testnet running on your developer computer. Follow steps defined in here:
 https://learn.ark.dev/core-getting-started/spinning-up-your-first-testnet#step-2-testnet-network-boot
 
-After your local testnet starts, the log should show that dapp was loaded. It should like this (if you haven't changed source code):
+After your local testnet starts, the log should show that dapp was loaded. It should look like this (if you haven't changed the source code):
 
 ```bash
 [2019-10-22 11:13:27.161] INFO : Starting dApp
 [2019-10-22 11:13:27.161] INFO : Initialization of dApp
 ```
 
-> Congratulations. Your first blockchain application is loaded and working and already compatible with any ARK Core based blockchain. 
+> Congratulations. Your first blockchain application is loaded and working and already compatible with any ARK Core based blockchain.
 
 ## Use Block Explorer To View Local Running Testnet
 
@@ -131,10 +126,6 @@ Congrats, your dapp is loaded. Now look at the resources below to understand mor
 
 If you discover a security vulnerability within this package, please send an e-mail to security@ark.io. All security vulnerabilities will be promptly addressed.
 
-## Credits
-
--   [Your Name](https://github.com/ArkEcosystem)
--   [All Contributors](../../../../contributors)
 
 ## License
 
