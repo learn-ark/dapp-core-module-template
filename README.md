@@ -1,9 +1,6 @@
 # ARK Core - dApp Template Project
 
-Create a new project based on this template and load your plugin into the corresponding network configuration.
-
-# ARK Core - dApp Installation Setup Steps
-This is a basic template project for Ark dApp development.
+This is a basic template project for ARK core dApp development. Create a new project based on this template and load your plugin into the corresponding network configuration by following the steps below. 
 
 > This Example is currently operational only on our `core/develop` branch!
 
