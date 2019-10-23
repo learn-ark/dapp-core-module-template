@@ -1,9 +1,5 @@
 # ARK Core - dApp Template Project
 
-<p align="center">
-    <img src="https://github.com/ArkEcosystem/core-plugin-skeleton/blob/master/banner.png" />
-</p>
-
 Create a new project based on this template and load your plugin into the corresponding network configuration.
 
 # ARK Core - dApp Installation Setup Steps
@@ -13,13 +9,13 @@ This is a basic template project for Ark dApp development.
 
 This template project provides initial structure for your dApp development.
 
-## dApp Installation
+## dApp Creation Steps
 
 ### STEP 0: Create New Project Based On This Template
 
 ### STEP 1: Checkout Your New dApp Project As a GitSubmodule in `core/plugins`
 
-Assuming you have already checked out out core repository and have local testnet running. If not head over to https://learn.ark.dev/core-getting-started/spinning-up-your-first-testnet#step-2-testnet-network-boot
+Assuming you have already checked out out core repository and have a local testnet running. If not head over to https://learn.ark.dev/core-getting-started/spinning-up-your-first-testnet#step-2-testnet-network-boot
 
 ```bash
 cd plugins/ #location for loading of custom non-core dApps
@@ -86,19 +82,18 @@ After your local testnet starts, the log should show that dapp was loaded. It sh
 The following code instructions will run a local copy of ARK Explorer and connect to local node.
 
 ```bash
-    git clone https://github.com/arkecosystem/explorer
-    cd explorer
+git clone https://github.com/arkecosystem/explorer
+cd explorer
 
-    yarn install
+yarn install
 
-    yarn serve:testnet
-
+yarn serve:testnet
 ```
 
 After running `yarn serve:testnet` you should see the following:
 
 ```bash
- DONE  Compiled successfully in 11030ms                                                                                                        11:07:14 AM
+DONE  Compiled successfully in 11030ms                                                                                                        11:07:14 AM
 
 No type errors found
 Version: typescript 3.6.3
@@ -123,7 +118,6 @@ Head over to http://localhost:8080/ to view contents of local running blockchain
 ## Security
 
 If you discover a security vulnerability within this package, please send an e-mail to security@ark.io. All security vulnerabilities will be promptly addressed.
-
 
 ## License
 
