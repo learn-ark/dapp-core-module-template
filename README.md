@@ -12,17 +12,18 @@ This template project provides initial structure for your dApp development.
 
 ### STEP 1: Checkout Your New dApp Project As a GitSubmodule in `core/plugins`
 
-Assuming you have already checked out out core repository and have a local testnet running. If not head over to https://learn.ark.dev/core-getting-started/spinning-up-your-first-testnet#step-2-testnet-network-boot
+You should already have a running core and a local testnet running. If not head over to https://learn.ark.dev/core-getting-started/spinning-up-your-first-testnet#step-2-testnet-network-boot.
 
 ```bash
 cd plugins/ #location for loading of custom non-core dApps
-git submodule add -f https://github.com/your-handle/your-dapp-name
+git submodule add -f https://github.com/your-gh-handle/your-dapp-name
 cd your-dapp-name
 ```
 
 ### STEP 2: Load The dApp In The Corresponding Network Configurations.
 
-In our example we load `@vendorname/dappname` in the Testnet network configuration. dApp name is taken from `node` package name as defined in package.json.
+We will enable our dApp `@vendorname/dappname` in the testnet network configuration. dApp name is taken from `node` package name as defined in package.json.
+You can change it to your needs.
 
 Go to:
 `core/packages/core/bin/testnet`
@@ -31,7 +32,9 @@ Go to:
 cd packages/core/bin/config/testnet
 ```
 
-Locate file `plugins.js`. We will add our dApp/plugin name to end of the list of the loaded plugins. This means that core will pickup the plugin/dapp and load it for a specific network configuration. Add line `"@arkecosystem/dappname": {}`: to the end of the `plugins.js` file, so it looks something like this:
+Locate file `plugins.js`. We will add our dApp name to end of the list of the loaded plugins. This means that core will pickup the dapp and load it for a specific network configuration. 
+
+Add line `"@arkecosystem/dappname": {}`: to the end of the `plugins.js` file, so it looks something like this:
 
 ```javascript
     "@arkecosystem/core-exchange-json-rpc": {
@@ -58,21 +61,34 @@ lerna success - @arkecosystem/crypto
 lerna success - @vendorname/dappname
 ```
 
-Last line showing that your plugin was loaded.
+Last line showing that your dApp was detected and compiled.
 
 ### STEP 3: Start Local Testnet Blockchain
 
 Start local blockchain with testnet running on your developer computer. Follow steps defined in here:
 https://learn.ark.dev/core-getting-started/spinning-up-your-first-testnet#step-2-testnet-network-boot
 
-After your local testnet starts, the log should show that dapp was loaded. It should look like this (if you haven't changed the source code):
+If you already have running and compiled core, you should go to `core/packages/core` and run command `yarn full:testnet`. 
+
+After local testnet starts, the log should show that dApp was loaded. It should look like this (if you haven't changed the source code):
 
 ```bash
 [2019-10-22 11:13:27.161] INFO : Starting dApp
 [2019-10-22 11:13:27.161] INFO : Initialization of dApp
 ```
 
-> Congratulations. Your first blockchain application is loaded and working and already compatible with any ARK Core based blockchain.
+> Congratulations. Your first distributed blockchain application is loaded and working and compatible with any ARK Core based blockchain.
+
+Feel free to look into `common/base-service.ts` class that exposes important Core Platform classes that you can work with. Your newly developed classes can extend this class and gain access to:
+
+- wallets and state
+- transaction pool
+- blockchain protocol
+- events
+- database 
+-... actually any module :)
+
+> Also check other packages/modules as they follow the same dApp structure.
 
 ## Use Block Explorer To View Local Running Testnet
 
