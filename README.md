@@ -1,6 +1,6 @@
 # ARK Core - dApp Template Project
 
-This is a basic template project for ARK core dApp development. Create a new project based on this template and load your plugin into the corresponding network configuration by following the steps below. 
+This is a basic template project for ARK core dApp development. Create a new project based on this template and load your plugin into the corresponding network configuration by following the steps below.
 
 > This Example is currently operational only on our `core/develop` branch!
 
@@ -32,7 +32,7 @@ Go to:
 cd packages/core/bin/config/testnet
 ```
 
-Locate file `plugins.js`. We will add our dApp name to end of the list of the loaded plugins. This means that core will pickup the dapp and load it for a specific network configuration. 
+Locate file `plugins.js`. We will add our dApp name to end of the list of the loaded plugins. This means that core will pickup the dapp and load it for a specific network configuration.
 
 Add line `"@arkecosystem/dappname": {}`: to the end of the `plugins.js` file, so it looks something like this:
 
@@ -68,7 +68,7 @@ Last line showing that your dApp was detected and compiled.
 Start local blockchain with testnet running on your developer computer. Follow steps defined in here:
 https://learn.ark.dev/core-getting-started/spinning-up-your-first-testnet#step-2-testnet-network-boot
 
-If you already have running and compiled core, you should go to `core/packages/core` and run command `yarn full:testnet`. 
+If you already have running and compiled core, you should go to `core/packages/core` and run command `yarn full:testnet`.
 
 After local testnet starts, the log should show that dApp was loaded. It should look like this (if you haven't changed the source code):
 
@@ -81,12 +81,12 @@ After local testnet starts, the log should show that dApp was loaded. It should 
 
 Feel free to look into `common/base-service.ts` class that exposes important Core Platform classes that you can work with. Your newly developed classes can extend this class and gain access to:
 
-- wallets and state
-- transaction pool
-- blockchain protocol
-- events
-- database 
--... actually any module :)
+-   wallets and state
+-   transaction pool
+-   blockchain protocol
+-   events
+-   database
+    -... actually any module :)
 
 > Also check other packages/modules as they follow the same dApp structure.
 
@@ -124,7 +124,7 @@ Head over to http://localhost:8080/ to view contents of local running blockchain
 
 ---
 
->Congrats, your dapp is loaded. Now look at the resources below to understand more about our dapp development.
+> Congrats, your dapp is loaded. Now look at the resources below to understand more about our dapp development.
 
 -   [Learn Development With ARK](https://learn.ark.dev)
 

@@ -5,10 +5,12 @@ import { DappManager } from "./manager";
 export const plugin: Container.IPluginDescriptor = {
     pkg: require("../package.json"),
     defaults,
-    alias: "dapp-core-skeleton",
+    alias: "dapp-core-template",
     async register(container: Container.IContainer, options) {
         if (!options.enabled) {
-            container.resolvePlugin<Logger.ILogger>("logger").info("dApp is enabled");
+            container
+                .resolvePlugin<Logger.ILogger>("logger")
+                .info("dApp is enabled");
 
             return undefined;
         }
@@ -22,11 +24,13 @@ export const plugin: Container.IPluginDescriptor = {
     },
 
     async deregister(container: Container.IContainer) {
-        const dappManager = container.resolvePlugin("dapp-core-skeleton");
+        const dappManager = container.resolvePlugin("dapp-core-template");
 
         if (dappManager) {
-            container.resolvePlugin<Logger.ILogger>("logger").info("Stopping dApp");
+            container
+                .resolvePlugin<Logger.ILogger>("logger")
+                .info("Stopping dApp");
             return dappManager.stop();
         }
-    },
+    }
 };

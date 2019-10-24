@@ -1,8 +1,19 @@
 {
-    "extends": "tsconfig.json",
+    "extends": "@sindresorhus/tsconfig",
     "compilerOptions": {
-        "outDir": "dist",
-        "resolveJsonModule": true
+        "alwaysStrict": false,
+        "esModuleInterop": true,
+        "incremental": true,
+        "lib": ["es2018"],
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noUnusedLocals": true,
+        "noUnusedParameters": false,
+        "resolveJsonModule": true,
+        "sourceMap": true,
+        "strict": false,
+        "target": "es2018",
+        "typeRoots": ["node_modules/@types"]
     },
-    "include": ["src/**/**.ts", "src/proto/**.json"]
+    "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts"]
 }

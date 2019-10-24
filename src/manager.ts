@@ -2,7 +2,9 @@ import { app } from "@arkecosystem/core-container";
 import { Logger } from "@arkecosystem/core-interfaces";
 
 export class DappManager {
-    private  readonly logger: Logger.ILogger = app.resolvePlugin<Logger.ILogger>("logger");
+    private readonly logger: Logger.ILogger = app.resolvePlugin<Logger.ILogger>(
+        "logger"
+    );
 
     /**
      * Your dApp init code goes here
