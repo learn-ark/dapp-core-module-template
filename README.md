@@ -90,37 +90,10 @@ Feel free to look into `common/base-service.ts` class that exposes important Cor
 
 > Also check other packages/modules as they follow the same dApp structure.
 
-## Use Block Explorer To View Local Running Testnet
+### Use Block Explorer To View Local Running Testnet
 
-The following code instructions will run a local copy of ARK Explorer and connect to local node.
-
-```bash
-git clone https://github.com/arkecosystem/explorer
-cd explorer
-
-yarn install
-
-yarn serve:testnet
-```
-
-After running `yarn serve:testnet` you should see the following:
-
-```bash
-DONE  Compiled successfully in 11030ms                                                                                                        11:07:14 AM
-
-No type errors found
-Version: typescript 3.6.3
-Time: 6973ms
-
-  App running at:
-  - Local:   http://localhost:8080/
-  - Network: http://192.168.0.178:8080/
-
-  Note that the development build is not optimized.
-  To create a production build, run yarn build.
-```
-
-Head over to http://localhost:8080/ to view contents of local running blockchain with Testnet environment setup.
+Click here to setup local blockchain explorer in a few simple steps:
+https://learn.ark.dev/core-getting-started/setup-local-blockchain-explorer
 
 ---
 
