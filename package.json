@@ -29,24 +29,24 @@
         "test:coverage": "cross-env CORE_ENV=test jest --coverage --coveragePathIgnorePatterns='/(defaults.ts|index.ts)$' --runInBand --forceExit"
     },
     "dependencies": {
-        "@arkecosystem/core-container": "^2.6.10",
-        "@arkecosystem/core-interfaces": "^2.6.10"
+        "@arkecosystem/core-container": "2.6.24",
+        "@arkecosystem/core-interfaces": "2.6.24"
     },
     "devDependencies": {
-        "@sindresorhus/tsconfig": "^0.5.0",
-        "@types/jest": "^24.0.18",
-        "@types/node": "^12.7.12",
-        "tslint": "^5.20.0",
-        "tslint-config-prettier": "^1.18.0",
-        "typescript": "^3.6.4",
-        "typedoc": "^0.15.0",
-        "ts-jest": "^24.0.2",
-        "jest": "^24.9.0",
-        "jest-extended": "^0.11.2",
-        "regenerator-runtime": "^0.13.0",
-        "cross-env": "^6.0.3",
-        "del-cli": "^3.0.0",
-        "prettier": "^1.18.2"
+        "@sindresorhus/tsconfig": "0.5.0",
+        "@types/jest": "24.0.19",
+        "@types/node": "12.11.2",
+        "tslint": "5.20.0",
+        "tslint-config-prettier": "1.18.0",
+        "typescript": "3.6.4",
+        "typedoc": "0.15.0",
+        "ts-jest": "24.1.0",
+        "jest": "24.9.0",
+        "jest-extended": "0.11.2",
+        "regenerator-runtime": "0.13.3",
+        "cross-env": "6.0.3",
+        "del-cli": "3.0.0",
+        "prettier": "1.18.2"
     },
     "jest": {
         "testEnvironment": "node",
