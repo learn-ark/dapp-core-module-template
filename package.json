@@ -38,7 +38,7 @@
         "@types/node": "12.12.29",
         "tslint": "5.20.1",
         "tslint-config-prettier": "1.18.0",
-        "typescript": "3.6.4",
+        "typescript": "3.8.3",
         "typedoc": "0.16.11",
         "ts-jest": "24.3.0",
         "jest": "24.9.0",
