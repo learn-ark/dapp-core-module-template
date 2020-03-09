@@ -42,7 +42,7 @@
         "typedoc": "0.15.0",
         "ts-jest": "24.1.0",
         "jest": "24.9.0",
-        "jest-extended": "0.11.2",
+        "jest-extended": "0.11.5",
         "regenerator-runtime": "0.13.3",
         "cross-env": "6.0.3",
         "del-cli": "3.0.0",
