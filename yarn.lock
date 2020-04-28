@@ -2,14 +2,14 @@
 # yarn lockfile v1
 
 
-"@arkecosystem/core-container@2.6.31":
-  version "2.6.31"
-  resolved "https://registry.yarnpkg.com/@arkecosystem/core-container/-/core-container-2.6.31.tgz#b6ab7d664b26b879459eeb25aa58a047b69f276b"
-  integrity sha512-syumWh6+vqeSSpkocXpfqwz0sijMWZyBm//2uKtPTufb2huhL3vcw871zXyAwq1aXNlj0oOQu4QsAl6DgO4sOg==
+"@arkecosystem/core-container@2.6.34":
+  version "2.6.34"
+  resolved "https://registry.yarnpkg.com/@arkecosystem/core-container/-/core-container-2.6.34.tgz#c05b8563cd1b733cf827d2f23e1ea4de650fad53"
+  integrity sha512-SQ/83ZwNTP9kiybDWFQF9KEvLDOeXjfizDxpLVfaj3BciIxIWw1WCx/WJP2fW5SxvQvpzEMCp75qczi2TRbzUQ==
   dependencies:
-    "@arkecosystem/core-event-emitter" "^2.6.31"
-    "@arkecosystem/core-interfaces" "^2.6.31"
-    "@arkecosystem/crypto" "^2.6.31"
+    "@arkecosystem/core-event-emitter" "^2.6.34"
+    "@arkecosystem/core-interfaces" "^2.6.34"
+    "@arkecosystem/crypto" "^2.6.34"
     "@hapi/hoek" "^8.0.2"
     "@hapi/joi" "^15.1.0"
     awilix "^4.2.2"
@@ -25,17 +25,26 @@
     log-process-errors "^5.0.2"
     semver "^7.0.0"
 
-"@arkecosystem/core-event-emitter@^2.6.31":
-  version "2.6.31"
-  resolved "https://registry.yarnpkg.com/@arkecosystem/core-event-emitter/-/core-event-emitter-2.6.31.tgz#bcf8e481be9bb0f3c9aac5a3e5b7eaf5c6b9ca92"
-  integrity sha512-SFc8i0e3ZvvNygeXmTKYikFUtJ1jTsuvLyhmLjF+cws3xM4tWDeYrECRsrJ25qr/iUtyzk3BkU8rrM8P9NaXgw==
+"@arkecosystem/core-event-emitter@^2.6.34":
+  version "2.6.34"
+  resolved "https://registry.yarnpkg.com/@arkecosystem/core-event-emitter/-/core-event-emitter-2.6.34.tgz#ee8e6c717998a1072d3974f91f1ebbcf9d178be3"
+  integrity sha512-IBmNUkxUCmMMtYvgESkUb6yyGjJmBspZEOTMAc7SOV75ZZ3VKxXvKVv1QuaR/CxfIRjHe0oRiv8/g4V/bmfOQA==
 
-"@arkecosystem/core-interfaces@2.6.31", "@arkecosystem/core-interfaces@^2.6.31":
+"@arkecosystem/core-interfaces@2.6.31":
   version "2.6.31"
   resolved "https://registry.yarnpkg.com/@arkecosystem/core-interfaces/-/core-interfaces-2.6.31.tgz#429c00741392f9db6902b7a54452ff639028f5bf"
   integrity sha512-o8TgCGUSbW412X0jBzrC50KLaKV7dCY5lvgNoEwCK5ohzhbEXmN75XPr3oR5r/HHBNZoXhxhxgp63hEfClmWNA==
   dependencies:
     "@arkecosystem/crypto" "^2.6.31"
+    awilix "^4.2.2"
+    dayjs "^1.8.15"
+
+"@arkecosystem/core-interfaces@^2.6.34":
+  version "2.6.34"
+  resolved "https://registry.yarnpkg.com/@arkecosystem/core-interfaces/-/core-interfaces-2.6.34.tgz#0837acaffef36c29fdc4d0a8cce3e3791b1969e1"
+  integrity sha512-QiNgZfsgJl0nbECWsAQ9Ggu7BjqrnczzN6AyeO0AoRA+3g8niy6hd9XzXmeChh9iK2TH12cCH5ce5d5cr1k5BA==
+  dependencies:
+    "@arkecosystem/crypto" "^2.6.34"
     awilix "^4.2.2"
     dayjs "^1.8.15"
 
@@ -65,6 +74,32 @@
     tiny-glob "^0.2.6"
     wif "^2.0.6"
 
+"@arkecosystem/crypto@^2.6.34":
+  version "2.6.34"
+  resolved "https://registry.yarnpkg.com/@arkecosystem/crypto/-/crypto-2.6.34.tgz#5ff8c2031decab371327e6cf6013cc485ef6a2ce"
+  integrity sha512-UXzKMXl6cP8e+ecs2ZpFI+Cffo28EANgg6ZdAznLjPf9hmMLrjvfHK13mWyqe4bkjM05YtHJduH1rUM5NgNRGQ==
+  dependencies:
+    "@arkecosystem/utils" "^1.1"
+    "@types/bytebuffer" "^5.0.40"
+    ajv "^6.10.2"
+    ajv-keywords "^3.4.1"
+    bcrypto "^4.1.0"
+    bip32 "^2.0.3"
+    bip39 "^3.0.2"
+    browserify-aes "^1.2.0"
+    bstring "^0.3.9"
+    buffer-xor "^2.0.2"
+    bytebuffer "^5.0.1"
+    dayjs "^1.8.15"
+    deepmerge "^4.0.0"
+    fast-memoize "^2.5.1"
+    ipaddr.js "^1.9.0"
+    lodash.get "^4.4.2"
+    lodash.set "^4.3.2"
+    lodash.sumby "^4.6.0"
+    tiny-glob "^0.2.6"
+    wif "^2.0.6"
+
 "@arkecosystem/utils@0.8.3":
   version "0.8.3"
   resolved "https://registry.yarnpkg.com/@arkecosystem/utils/-/utils-0.8.3.tgz#1ab84a463a5bf4df4788da9e4c92bc592e9bcfa6"
@@ -74,6 +109,18 @@
     fast-copy "^2.0.3"
     fast-deep-equal "^2.0.1"
     fast-sort "^1.5.6"
+
+"@arkecosystem/utils@^1.1":
+  version "1.1.8"
+  resolved "https://registry.yarnpkg.com/@arkecosystem/utils/-/utils-1.1.8.tgz#f00073107d637d58faf8faf364e871f8217444d0"
+  integrity sha512-+04iv7R0ZJ8soKpIf04UYeFBbRgNWF6cZraG7xY60lF7FXLycphMfBBs08CSdlIYiA8xkMGiyuPPM/2fr88m/g==
+  dependencies:
+    "@hapi/bourne" "^2.0.0"
+    deepmerge "^4.2.2"
+    fast-copy "^2.0.4"
+    fast-deep-equal "^3.1.1"
+    fast-sort "^2.0.0"
+    type-fest "^0.12.0"
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.5.5":
   version "7.5.5"
@@ -410,6 +457,11 @@
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/@hapi/bourne/-/bourne-1.3.2.tgz#0a7095adea067243ce3283e1b56b8a8f453b242a"
   integrity sha512-1dVNHT76Uu5N3eJNTYcvxee+jzX4Z9lfciqRRHCU27ihbUcYi+iSc2iml5Ke1LXe1SyJCLA0+14Jh4tXJgOppA==
+
+"@hapi/bourne@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@hapi/bourne/-/bourne-2.0.0.tgz#5bb2193eb685c0007540ca61d166d4e1edaf918d"
+  integrity sha512-WEezM1FWztfbzqIUbsDzFRVMxSoLy3HugVcux6KDDtTqzPsLE8NDRHfXvev66aH1i2oOKKar3/XDjbvh/OUBdg==
 
 "@hapi/hoek@8.x.x", "@hapi/hoek@^8.0.2", "@hapi/hoek@^8.3.0":
   version "8.3.2"
@@ -2030,10 +2082,20 @@ fast-copy@^2.0.3:
   resolved "https://registry.yarnpkg.com/fast-copy/-/fast-copy-2.0.3.tgz#e9202d6944c9602b575f44d2857cef0f40dc6581"
   integrity sha512-q0VzLSTRXwNOBzTG8dP+SkCxyTieVAhDEddSvw7X799+k3gb8I5T2IVPhBcwZzAY3Ac1P7/B6TSUvJDdO+8vcg==
 
+fast-copy@^2.0.4:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/fast-copy/-/fast-copy-2.0.5.tgz#ddf558bc3c1dd15782da69327adbf4f79499dc50"
+  integrity sha512-KVLihIS41LzwuXJFdUm5NstoBfAmhCPCzhn362CX2IklaPrzQRtCedzrpPa7Ff/OVbNMUSJJFqx5+4yp07NmbQ==
+
 fast-deep-equal@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-2.0.1.tgz#7b05218ddf9667bf7f370bf7fdb2cb15fdd0aa49"
   integrity sha1-ewUhjd+WZ79/Nwv3/bLLFf3Qqkk=
+
+fast-deep-equal@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-3.1.1.tgz#545145077c501491e33b15ec408c294376e94ae4"
+  integrity sha512-8UEa58QDLauDNfpbrX55Q9jrGHThw2ZMdOky5Gl1CDtVeJDPVrG4Jxx1N8jw2gkWaff5UUuX1KJd+9zGe2B+ZA==
 
 fast-equals@^1.6.0:
   version "1.6.3"
@@ -2070,6 +2132,11 @@ fast-sort@^1.5.6:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/fast-sort/-/fast-sort-1.6.0.tgz#68c6d94ce309ead19d562014159902c80c68d0a0"
   integrity sha512-sjV6dxWdHs14cef7GzJgCWSOagw57cUBYMey+seWeOsU0HgMf2g4Wkdflv65X/8E4UWptUcq9EZ3YqSXUnUy9Q==
+
+fast-sort@^2.0.0:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/fast-sort/-/fast-sort-2.1.1.tgz#b44f908b5bc28c442986682098eb879dba7f07f9"
+  integrity sha512-X8DNrUzoejZZ+AdAHCVXdKHUrbzz57jKG5/prsKKzyaVKwzSwzm0HQ76cPdo69LObWDShJ77Cn1nPMSXP87FOQ==
 
 fast-stringify@^1.1.0:
   version "1.1.2"
@@ -4912,6 +4979,11 @@ type-fest@^0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.11.0.tgz#97abf0872310fed88a5c466b25681576145e33f1"
   integrity sha512-OdjXJxnCN1AvyLSzeKIgXTXxV+99ZuXl3Hpo9XpJAv9MBcHrrJOQ5kV7ypXOuQie+AmWG25hLbiKdwYTifzcfQ==
+
+type-fest@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.12.0.tgz#f57a27ab81c68d136a51fd71467eff94157fa1ee"
+  integrity sha512-53RyidyjvkGpnWPMF9bQgFtWp+Sl8O2Rp13VavmJgfAP9WWG6q6TkrKU8iyJdnwnfgHI6k2hTlgqH4aSdjoTbg==
 
 type-fest@^0.6.0:
   version "0.6.0"
