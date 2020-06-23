@@ -2,14 +2,14 @@
 # yarn lockfile v1
 
 
-"@arkecosystem/core-container@2.6.38":
-  version "2.6.38"
-  resolved "https://registry.yarnpkg.com/@arkecosystem/core-container/-/core-container-2.6.38.tgz#5c694290ba7860fd3309aafd02156c0cd1c02349"
-  integrity sha512-Zw/dNrINyXyqNfadrHhfTZdoboILJF6cgCbaKeR+t0e7rNTwrJuz2Z8NBGB0nM1pRtXItUynU5aWs1WcHr3iPg==
+"@arkecosystem/core-container@2.6.39":
+  version "2.6.39"
+  resolved "https://registry.yarnpkg.com/@arkecosystem/core-container/-/core-container-2.6.39.tgz#e16129d4bc12afeb90ac817c442733b047a97e0f"
+  integrity sha512-NSWL0IH6/6yA9vknP7aPanDpge8THQ3dUZQCbh/+gvCI0sY5k2mIhk+m3Ff218YR7rAnj/HQSi4NxO68qy2CFg==
   dependencies:
-    "@arkecosystem/core-event-emitter" "^2.6.38"
-    "@arkecosystem/core-interfaces" "^2.6.38"
-    "@arkecosystem/crypto" "^2.6.38"
+    "@arkecosystem/core-event-emitter" "^2.6.39"
+    "@arkecosystem/core-interfaces" "^2.6.39"
+    "@arkecosystem/crypto" "^2.6.39"
     "@hapi/hoek" "^8.0.2"
     "@hapi/joi" "^15.1.0"
     awilix "^4.2.2"
@@ -25,12 +25,12 @@
     log-process-errors "^5.0.2"
     semver "^7.0.0"
 
-"@arkecosystem/core-event-emitter@^2.6.38":
-  version "2.6.38"
-  resolved "https://registry.yarnpkg.com/@arkecosystem/core-event-emitter/-/core-event-emitter-2.6.38.tgz#1882b76fea617931db5225700f67ff315065c064"
-  integrity sha512-HXww7bmk+4a6wy+1Bxp0l+1zRjNWeqXFIlUeodARUpCzo05w2dv8Jr6omBZwHPcTwmpcCVjptWnAZDI9PbnkeQ==
+"@arkecosystem/core-event-emitter@^2.6.39":
+  version "2.6.39"
+  resolved "https://registry.yarnpkg.com/@arkecosystem/core-event-emitter/-/core-event-emitter-2.6.39.tgz#de0fbefd84f89462e5cecc2d04fea73ac990f3ed"
+  integrity sha512-azlySq7X9+RbvbLyWjK1CX2/uDyWaZNmic00vVbm2MowmbqyB2SjDtiv3vmorx4m5fydLtf9ZFKCDaNa9J3PyA==
 
-"@arkecosystem/core-interfaces@2.6.39":
+"@arkecosystem/core-interfaces@2.6.39", "@arkecosystem/core-interfaces@^2.6.39":
   version "2.6.39"
   resolved "https://registry.yarnpkg.com/@arkecosystem/core-interfaces/-/core-interfaces-2.6.39.tgz#4b97fa0511fd60a593ce4808f3a20e6ea03d1cf9"
   integrity sha512-mHkLo0c6z88L10irZBV3hwEbI47VFNgno0V2XXIdxSBoC59WVY3WYZFLvN7Yqb6HHZ7d+osfoVW6qMSVCLVJWw==
@@ -38,41 +38,6 @@
     "@arkecosystem/crypto" "^2.6.39"
     awilix "^4.2.2"
     dayjs "^1.8.15"
-
-"@arkecosystem/core-interfaces@^2.6.38":
-  version "2.6.38"
-  resolved "https://registry.yarnpkg.com/@arkecosystem/core-interfaces/-/core-interfaces-2.6.38.tgz#bb0fee3b53ca05892922012444049001932ccfbf"
-  integrity sha512-/6e9OWbQRhIEk1u0kKb+HPQR7H6A9dILIf3dBVPyQWiBTZULj6EmJtH5FgyIKsDi6GLjwZa2CtKreBRbYFmfRg==
-  dependencies:
-    "@arkecosystem/crypto" "^2.6.38"
-    awilix "^4.2.2"
-    dayjs "^1.8.15"
-
-"@arkecosystem/crypto@^2.6.38":
-  version "2.6.38"
-  resolved "https://registry.yarnpkg.com/@arkecosystem/crypto/-/crypto-2.6.38.tgz#e61e502b9ef0c5d670ef3f9f336fb11fe49242d9"
-  integrity sha512-kRglUO+6T5zGBpgt5GJ0bxiFPaA6lSNTc7rs87zty3WUgYHSE45tF6S4xKzNMwFSpBgm19BJA5ytAdn6iM83Pg==
-  dependencies:
-    "@arkecosystem/utils" "^1.1"
-    "@types/bytebuffer" "^5.0.40"
-    ajv "^6.10.2"
-    ajv-keywords "^3.4.1"
-    bcrypto "^4.1.0"
-    bip32 "^2.0.3"
-    bip39 "^3.0.2"
-    browserify-aes "^1.2.0"
-    bstring "^0.3.9"
-    buffer-xor "^2.0.2"
-    bytebuffer "^5.0.1"
-    dayjs "^1.8.15"
-    deepmerge "^4.0.0"
-    fast-memoize "^2.5.1"
-    ipaddr.js "^1.9.0"
-    lodash.get "^4.4.2"
-    lodash.set "^4.3.2"
-    lodash.sumby "^4.6.0"
-    tiny-glob "^0.2.6"
-    wif "^2.0.6"
 
 "@arkecosystem/crypto@^2.6.39":
   version "2.6.39"
