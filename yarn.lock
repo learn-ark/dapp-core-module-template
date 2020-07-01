@@ -2,14 +2,14 @@
 # yarn lockfile v1
 
 
-"@arkecosystem/core-container@2.6.39":
-  version "2.6.39"
-  resolved "https://registry.yarnpkg.com/@arkecosystem/core-container/-/core-container-2.6.39.tgz#e16129d4bc12afeb90ac817c442733b047a97e0f"
-  integrity sha512-NSWL0IH6/6yA9vknP7aPanDpge8THQ3dUZQCbh/+gvCI0sY5k2mIhk+m3Ff218YR7rAnj/HQSi4NxO68qy2CFg==
+"@arkecosystem/core-container@2.6.42":
+  version "2.6.42"
+  resolved "https://registry.yarnpkg.com/@arkecosystem/core-container/-/core-container-2.6.42.tgz#bbb7cbbad55ab15d8f1ac96f273e9a0a4e1711b1"
+  integrity sha512-aJDc2OBOMd4JSPL4eScmn7Fe97weCEOnw6m0jajtOrmixVvc8TO7ZXOJula0xAEkwBaBOq4uTCWlTVdLiZiaJA==
   dependencies:
-    "@arkecosystem/core-event-emitter" "^2.6.39"
-    "@arkecosystem/core-interfaces" "^2.6.39"
-    "@arkecosystem/crypto" "^2.6.39"
+    "@arkecosystem/core-event-emitter" "^2.6.42"
+    "@arkecosystem/core-interfaces" "^2.6.42"
+    "@arkecosystem/crypto" "^2.6.42"
     "@hapi/hoek" "^8.0.2"
     "@hapi/joi" "^15.1.0"
     awilix "^4.2.2"
@@ -25,12 +25,12 @@
     log-process-errors "^5.0.2"
     semver "^7.0.0"
 
-"@arkecosystem/core-event-emitter@^2.6.39":
-  version "2.6.39"
-  resolved "https://registry.yarnpkg.com/@arkecosystem/core-event-emitter/-/core-event-emitter-2.6.39.tgz#de0fbefd84f89462e5cecc2d04fea73ac990f3ed"
-  integrity sha512-azlySq7X9+RbvbLyWjK1CX2/uDyWaZNmic00vVbm2MowmbqyB2SjDtiv3vmorx4m5fydLtf9ZFKCDaNa9J3PyA==
+"@arkecosystem/core-event-emitter@^2.6.42":
+  version "2.6.42"
+  resolved "https://registry.yarnpkg.com/@arkecosystem/core-event-emitter/-/core-event-emitter-2.6.42.tgz#1cce82f896aa8cb76811bcbe6a7244dc9be836ef"
+  integrity sha512-WtG/f11Cklb4eoK9/7ASNdHcOwf/aIVvmX7AthvDcY55VuW8C/Yq/iVXQLTkbJmgPV/D9uLDrbQ3J1Ab2URdAw==
 
-"@arkecosystem/core-interfaces@2.6.42":
+"@arkecosystem/core-interfaces@2.6.42", "@arkecosystem/core-interfaces@^2.6.42":
   version "2.6.42"
   resolved "https://registry.yarnpkg.com/@arkecosystem/core-interfaces/-/core-interfaces-2.6.42.tgz#e8ce09e4694019d38764dfd470d3ebad328e3a50"
   integrity sha512-5dBnxfug473R9/iDaCkL2ivm+l7jR9wftel1ULOrTg5pEu7GibS49o2oXWOA4lYRZqiZlmqihX3mA9+BPymvrg==
@@ -38,41 +38,6 @@
     "@arkecosystem/crypto" "^2.6.42"
     awilix "^4.2.2"
     dayjs "^1.8.15"
-
-"@arkecosystem/core-interfaces@^2.6.39":
-  version "2.6.39"
-  resolved "https://registry.yarnpkg.com/@arkecosystem/core-interfaces/-/core-interfaces-2.6.39.tgz#4b97fa0511fd60a593ce4808f3a20e6ea03d1cf9"
-  integrity sha512-mHkLo0c6z88L10irZBV3hwEbI47VFNgno0V2XXIdxSBoC59WVY3WYZFLvN7Yqb6HHZ7d+osfoVW6qMSVCLVJWw==
-  dependencies:
-    "@arkecosystem/crypto" "^2.6.39"
-    awilix "^4.2.2"
-    dayjs "^1.8.15"
-
-"@arkecosystem/crypto@^2.6.39":
-  version "2.6.39"
-  resolved "https://registry.yarnpkg.com/@arkecosystem/crypto/-/crypto-2.6.39.tgz#8d8c6384908030e851919f9e7399ab674a9bca90"
-  integrity sha512-QaPI/8VHI8XU8CF1DgIl+jU+HHtnYJB1fW1l7PGu2NGwBuxVlJY/aAcUFsrzXaniFekOSQL+anjeGaEWvP6EQQ==
-  dependencies:
-    "@arkecosystem/utils" "^1.1"
-    "@types/bytebuffer" "^5.0.40"
-    ajv "^6.10.2"
-    ajv-keywords "^3.4.1"
-    bcrypto "^4.1.0"
-    bip32 "^2.0.3"
-    bip39 "^3.0.2"
-    browserify-aes "^1.2.0"
-    bstring "^0.3.9"
-    buffer-xor "^2.0.2"
-    bytebuffer "^5.0.1"
-    dayjs "^1.8.15"
-    deepmerge "^4.0.0"
-    fast-memoize "^2.5.1"
-    ipaddr.js "^1.9.0"
-    lodash.get "^4.4.2"
-    lodash.set "^4.3.2"
-    lodash.sumby "^4.6.0"
-    tiny-glob "^0.2.6"
-    wif "^2.0.6"
 
 "@arkecosystem/crypto@^2.6.42":
   version "2.6.42"
@@ -1210,16 +1175,6 @@ bcrypt-pbkdf@^1.0.0:
   dependencies:
     tweetnacl "^0.14.3"
 
-bcrypto@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/bcrypto/-/bcrypto-4.1.0.tgz#04fd2ec095e4eba121412e287b9c542cd7230a57"
-  integrity sha512-7QMCwNPAM53PcRG2gHwMHLcTjSwyQPYfTptRS38KuBZ7/Bf7zXVHZrQlvNnpu/m13qCVEMY4Wimnc+qt+rvMZg==
-  dependencies:
-    bsert "~0.0.10"
-    bufio "~1.0.6"
-    loady "~0.0.1"
-    nan "^2.13.2"
-
 bcrypto@^5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/bcrypto/-/bcrypto-5.2.0.tgz#7cc944d2cc2b7beeff04c74f8611a001612a981d"
@@ -1376,11 +1331,6 @@ buffer-xor@^2.0.2:
   integrity sha512-eHslX0bin3GB+Lx2p7lEYRShRewuNZL3fUl4qlVJGGiwoPGftmt8JQgk2Y9Ji5/01TnVDo33E5b5O3vUB1HdqQ==
   dependencies:
     safe-buffer "^5.1.1"
-
-bufio@~1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/bufio/-/bufio-1.0.6.tgz#e0eb6d70b2efcc997b6f8872173540967f90fa4d"
-  integrity sha512-mjYZFRHmI9bk3Oeexu0rWjHFY+w6hGLabdmwSFzq+EFr4MHHsNOYduDVdYl71NG5pTPL7GGzUCMk9cYuV34/Qw==
 
 bufio@~1.0.7:
   version "1.0.7"
