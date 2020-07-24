@@ -35,7 +35,7 @@
     "devDependencies": {
         "@sindresorhus/tsconfig": "0.7.0",
         "@types/jest": "26.0.3",
-        "@types/node": "12.12.47",
+        "@types/node": "12.12.52",
         "tslint": "6.1.2",
         "tslint-config-prettier": "1.18.0",
         "typescript": "3.9.7",
