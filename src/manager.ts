@@ -1,10 +1,9 @@
-import { app } from "@arkecosystem/core-container";
-import { Logger } from "@arkecosystem/core-interfaces";
+import { Container, Contracts } from "@arkecosystem/core-kernel";
 
+@Container.injectable()
 export class DappManager {
-    private readonly logger: Logger.ILogger = app.resolvePlugin<Logger.ILogger>(
-        "logger"
-    );
+    @Container.inject(Container.Identifiers.LogService)
+    private readonly logger!: Contracts.Kernel.Logger;
 
     /**
      * Your dApp init code goes here
