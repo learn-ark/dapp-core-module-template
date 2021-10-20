@@ -33,7 +33,7 @@
         "@arkecosystem/core-interfaces": "2.7.1"
     },
     "devDependencies": {
-        "@sindresorhus/tsconfig": "0.7.0",
+        "@sindresorhus/tsconfig": "2.0.0",
         "@types/jest": "26.0.14",
         "@types/node": "12.12.62",
         "tslint": "6.1.3",
