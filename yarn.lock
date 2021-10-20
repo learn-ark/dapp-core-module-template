@@ -30,7 +30,16 @@
   resolved "https://registry.yarnpkg.com/@arkecosystem/core-event-emitter/-/core-event-emitter-2.7.1.tgz#1675ce8edc5bfa2b92f46c4b589b49ab8b113419"
   integrity sha512-j0rU79FQX7R6g8/L1kdvDKwB6L6J4/CuUr8Vr96pLrZ5ju+bmTefwPqxCNMOtizTagbhcEzyGA4WHbqNxRT4dw==
 
-"@arkecosystem/core-interfaces@2.7.1", "@arkecosystem/core-interfaces@^2.7.1":
+"@arkecosystem/core-interfaces@2.7.26":
+  version "2.7.26"
+  resolved "https://registry.yarnpkg.com/@arkecosystem/core-interfaces/-/core-interfaces-2.7.26.tgz#53333776991621193af1690bf4a4b832bf025b69"
+  integrity sha512-IU8b+Jkwt8hzsztVHyNLBTCuITwROvFlvozgOys+lThcBQF3UbI6ai4F1WuVDJk0nZuOysKBhTDubfvN2PfLVA==
+  dependencies:
+    "@arkecosystem/crypto" "^2.7.26"
+    awilix "^4.2.2"
+    dayjs "^1.8.15"
+
+"@arkecosystem/core-interfaces@^2.7.1":
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/@arkecosystem/core-interfaces/-/core-interfaces-2.7.1.tgz#1f99cf5b7a2f412218788985141d0d7a3e6760a2"
   integrity sha512-eNep9QP/rzIqf/oj6R95OScJhmHjG+x6e8HmiH5W/6L4uxEMdP9ebOTFpuWmSWtmm+61HvE0fBmYPlaWAFkCNg==
@@ -43,6 +52,32 @@
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/@arkecosystem/crypto/-/crypto-2.7.1.tgz#4f9066512722fca24a22d7118faafbeda0f5ab16"
   integrity sha512-VSzpz9DtCez7bX2o+/mgRJIkSMcc7VkOq8+euMPRTmqgaQNraHjuU6YMMceuG6fYqZrVbrefZuHPte8FfJhNzA==
+  dependencies:
+    "@arkecosystem/utils" "^1.2"
+    "@types/bytebuffer" "^5.0.40"
+    ajv "^6.10.2"
+    ajv-keywords "^3.4.1"
+    bcrypto "^5.2.0"
+    bip32 "^2.0.3"
+    bip39 "^3.0.2"
+    browserify-aes "^1.2.0"
+    bstring "^0.3.9"
+    buffer-xor "^2.0.2"
+    bytebuffer "^5.0.1"
+    dayjs "^1.8.15"
+    deepmerge "^4.0.0"
+    fast-memoize "^2.5.1"
+    ipaddr.js "^1.9.0"
+    lodash.get "^4.4.2"
+    lodash.set "^4.3.2"
+    lodash.sumby "^4.6.0"
+    tiny-glob "^0.2.6"
+    wif "^2.0.6"
+
+"@arkecosystem/crypto@^2.7.26":
+  version "2.7.26"
+  resolved "https://registry.yarnpkg.com/@arkecosystem/crypto/-/crypto-2.7.26.tgz#a36afb3e86cdd4c47a1f6170e60dac00bf520db4"
+  integrity sha512-rSw8wCo/r9R/GwTxZWPNSjZS2h11dTc3YTksgKAmBHGM1tnX7wNkYS1I0AEKzEf8FwxkBsDWsB9O88koXaFeZA==
   dependencies:
     "@arkecosystem/utils" "^1.2"
     "@types/bytebuffer" "^5.0.40"
